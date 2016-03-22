@@ -1,0 +1,34 @@
+{
+  "name": "bem-generator",
+  "version": "1.0.0",
+  "description": "Generate BEM class names with ease",
+  "main": "./dist",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "babel ./src/index.js -o ./dist/index.js --minified",
+    "prepublish": "in-publish && npm test && npm run build || not-in-publish",
+    "test": "mocha --compilers js:babel-register test/**/*-test.js"
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "generator"
+  ],
+  "author": "Guilherme Nagatomo <nagatomo.guilherme@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.curry": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.2",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "eslint": "^2.4.0",
+    "eslint-plugin-mocha": "^2.0.0",
+    "in-publish": "^2.0.0",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.2"
+  }
+}
