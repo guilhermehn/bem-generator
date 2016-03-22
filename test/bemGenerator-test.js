@@ -40,4 +40,11 @@ describe('bemGenerator module', () => {
       expect(element('element').modifier('modifier')).to.equals('element--modifier')
     })
   })
+
+  describe('block().element().modifier()', () => {
+    it('should output a full BEM class string', () => {
+      let className = block('block').element('element').modifier('modifier')
+      expect(className).to.equals('block__element--modifier')
+    })
+  })
 })

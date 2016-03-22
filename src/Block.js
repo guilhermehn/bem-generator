@@ -12,6 +12,6 @@ export default class Block extends Modifiable {
   }
 
   element(name) {
-    return new Element(this.name, name)
+    return new Element(name, this.name)
   }
 }
