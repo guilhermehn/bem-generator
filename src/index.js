@@ -8,3 +8,8 @@ export function block(name) {
 export function element(name, block) {
   return new Element(name, block)
 }
+
+export default {
+  block,
+  element
+}
