@@ -10,7 +10,7 @@
     "test": "mocha --compilers js:babel-register test/**/*-test.js"
   },
   "files": [
-    "index.js",
+    "src",
     "dist"
   ],
   "keywords": [
