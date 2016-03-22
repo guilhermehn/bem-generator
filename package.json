@@ -9,6 +9,10 @@
     "prepublish": "in-publish && npm test && npm run build || not-in-publish",
     "test": "mocha --compilers js:babel-register test/**/*-test.js"
   },
+  "files": [
+    "index.js",
+    "dist"
+  ],
   "keywords": [
     "bem",
     "css",
