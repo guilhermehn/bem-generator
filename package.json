@@ -32,5 +32,13 @@
     "mocha": "^2.4.5",
     "rimraf": "^2.5.2",
     "webpack": "^1.12.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermehn/bem-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guilhermehn/bem-generator/issues"
+  },
+  "homepage": "https://github.com/guilhermehn/bem-generator#readme"
 }
