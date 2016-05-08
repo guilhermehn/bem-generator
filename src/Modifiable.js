@@ -1,5 +1,6 @@
 export default class Modifiable {
   modifier(name) {
-    return `${this.toString()}--${name}`
+    const className = this.toString()
+    return `${className} ${className}--${name}`
   }
 }
