@@ -26,4 +26,10 @@ describe('element(`string`)', () => {
     const m = e.modifier('modifier')
     expect(m).to.equals('element element--modifier')
   })
+
+  it('should be able to be modified via `.modifier(´array´)`', () => {
+    const e = element('element')
+    const m = e.modifier(['modifier1', 'modifier2'])
+    expect(m).to.equals('element element--modifier1 element--modifier2')
+  })
 })

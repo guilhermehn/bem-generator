@@ -22,4 +22,10 @@ describe('block(`string`)', () => {
     const myBlock = block('block')
     expect(myBlock.modifier('modifier')).to.equals('block block--modifier')
   })
+
+  it('should be able to be modified via `.modifier(´array´)`', () => {
+    const b = block('block')
+    const m = b.modifier(['modifier1', 'modifier2'])
+    expect(m).to.equals('block block--modifier1 block--modifier2')
+  })
 })

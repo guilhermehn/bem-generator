@@ -49,10 +49,21 @@ let b = block('foo')
 let el = element('bar', b)
 
 el.toString()
-// -> foo__bar
+// -> 'foo__bar'
 
 el.modifier('red').toString()
-// -> foo__bar--red
+// -> 'foo__bar foo__bar--red'
+```
+
+Modifiers accepts more than one modifier:
+
+```js
+import { block, element } from 'bem-generator'
+
+let b = block('foo')
+
+el.modifier(['large', 'red']).toString()
+// -> 'foo foo--large foo--red'
 ```
 
 ## License
