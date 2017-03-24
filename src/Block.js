@@ -1,7 +1,7 @@
-import Modifiable from './Modifiable'
-import Element from './Element'
+const Modifiable = require('./Modifiable')
+const Element = require('./Element')
 
-export default class Block extends Modifiable {
+module.exports = class Block extends Modifiable {
   constructor(name) {
     super()
     this.name = name
