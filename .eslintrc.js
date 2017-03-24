@@ -3,11 +3,6 @@ module.exports = {
     'eslint:recommended'
   ],
 
-  globals: {
-    describe: true,
-    it: true
-  },
-
   rules: {
     indent: [2, 2],
     quotes: [2, 'single'],
@@ -23,11 +18,11 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    browser: true
+    browser: true,
+    mocha: true
   },
 
   parserOptions: {
-    sourceType: 'module',
     ecmaVersion: 6
   },
 
