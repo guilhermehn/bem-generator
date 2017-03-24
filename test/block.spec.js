@@ -1,5 +1,5 @@
-import { expect } from 'chai'
-import { block } from '../src'
+const { expect } = require('chai')
+const { block } = require('../')
 
 describe('block(`string`)', () => {
   it('should return a Block class instance', () => {
@@ -25,7 +25,7 @@ describe('block(`string`)', () => {
 
   it('should be able to be modified via `.modifier(´array´)`', () => {
     const b = block('block')
-    const m = b.modifier(['modifier1', 'modifier2'])
+    const m = b.modifier('modifier1', 'modifier2')
     expect(m).to.equals('block block--modifier1 block--modifier2')
   })
 })

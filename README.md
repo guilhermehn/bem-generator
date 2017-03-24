@@ -62,7 +62,7 @@ import { block, element } from 'bem-generator'
 
 let b = block('foo')
 
-el.modifier(['large', 'red']).toString()
+el.modifier('large', 'red').toString()
 // -> 'foo foo--large foo--red'
 ```
 

@@ -1,6 +1,6 @@
-import Modifiable from './Modifiable'
+const Modifiable = require('./Modifiable')
 
-export default class Element extends Modifiable {
+module.exports = class Element extends Modifiable {
   constructor(name, block) {
     super()
     this.name = name

@@ -1,15 +1,17 @@
-import Block from './Block'
-import Element from './Element'
+const Block = require('./Block')
+const Element = require('./Element')
 
-export function block(name) {
+function block(name) {
   return new Block(name)
 }
+exports.block = block
 
-export function element(name, block) {
+function element(name, block) {
   return new Element(name, block)
 }
+exports.element = element
 
-export default {
+module.exports = {
   block,
   element
 }
