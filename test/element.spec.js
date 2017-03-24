@@ -1,5 +1,5 @@
-import { expect } from 'chai'
-import { block, element } from '../src'
+const { expect } = require('chai')
+const { block, element } = require('../')
 
 describe('element(`string`)', () => {
   it('should return a object instance', () => {
@@ -29,7 +29,7 @@ describe('element(`string`)', () => {
 
   it('should be able to be modified via `.modifier(´array´)`', () => {
     const e = element('element')
-    const m = e.modifier(['modifier1', 'modifier2'])
+    const m = e.modifier('modifier1', 'modifier2')
     expect(m).to.equals('element element--modifier1 element--modifier2')
   })
 })

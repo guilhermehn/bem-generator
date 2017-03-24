@@ -1,5 +1,5 @@
-import { expect } from 'chai'
-import { block, element } from '../src'
+const { expect } = require('chai')
+const { block, element } = require('../')
 
 describe('{block,element}.modifier(string|array[, block|element])', () => {
   it('should output a full BEM class string', () => {
@@ -11,9 +11,7 @@ describe('{block,element}.modifier(string|array[, block|element])', () => {
 
   it('should accept an array of modifier names', () => {
     const b = block('block')
-    const modifiers = ['large', 'red']
-
-    expect(b.modifier(modifiers)).to.equals('block block--large block--red')
+    expect(b.modifier('large', 'red')).to.equals('block block--large block--red')
   })
 
   it('should work with ES2015 template syntax', () => {
