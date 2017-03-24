@@ -8,15 +8,14 @@
     "posttest": "npm run coverage",
     "coverage": "istanbul cover _mocha -- -R spec"
   },
-  "files": [
-    "src",
-    "dist"
-  ],
   "keywords": [
     "bem",
     "css",
     "generator"
   ],
+  "engines": {
+    "node": ">=7"
+  },
   "author": "Guilherme Nagatomo <nagatomo.guilherme@gmail.com>",
   "license": "MIT",
   "devDependencies": {
