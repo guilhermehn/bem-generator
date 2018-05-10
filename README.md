@@ -1,4 +1,6 @@
 # bem-generator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/guilhermehn/bem-generator.svg)](https://greenkeeper.io/)
 > Utility for working with BEM convention (works better with React)
 
 ## Install
